@@ -36,9 +36,9 @@ export default function Hero() {
           variants={rise}
           className="font-display text-5xl leading-[1.05] text-cream sm:text-6xl md:text-7xl"
         >
-          Good food.
+          Where time pauses
           <br />
-          <span className="italic font-light text-gold">Better moments.</span>
+          <span className="italic font-light text-gold">and memories stay.</span>
         </motion.h1>
 
         <motion.p
