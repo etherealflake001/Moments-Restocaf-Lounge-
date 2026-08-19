@@ -1,24 +1,25 @@
 // ─────────────────────────────────────────────────────────────
 // SITE CONTENT — everything text/data-driven lives here.
-// This is placeholder copy. Replace with Moments' real details
-// once photos, menu and bio text are sent over.
+// Pulled from the real Instagram bio + photos (momentsrestocafe).
+// Menu item names are drawn from real dish photos/captions; prices
+// were not visible on Instagram, so they're left blank — fill in
+// real prices in the `price` fields below.
 // ─────────────────────────────────────────────────────────────
 
 export const brand = {
   name: "Moments",
   fullName: "Moments Resto Café & Lounge",
-  tagline: "Good food. Better moments.",
+  tagline: "Where time pauses and memories stay",
   eyebrow: "Resto Café & Lounge",
   description:
-    "An all-day café that turns into an evening lounge — where every plate, pour and playlist is chosen to make ordinary hours feel worth remembering.",
-  address: "Address — replace with real location",
-  phone: "+00 000 000 0000",
-  email: "hello@momentsrestocafe.com",
+    "Coffee, breakfast and lunch by day on Floors 1 and 2 — then a rooftop lounge by night, with grills, Afro-fusion plates and cocktails.",
+  address: "Floors 1 & 2, Mobil Service Station, along Summit Road, Asaba, Nigeria",
+  phone: "0812 405 7223",
+  email: "",
   instagram: "https://www.instagram.com/momentsrestocafe",
   hours: [
-    { day: "Mon – Thu", time: "9:00 – 23:00" },
-    { day: "Fri – Sat", time: "9:00 – 01:00" },
-    { day: "Sun", time: "10:00 – 22:00" },
+    { day: "Café · Mon – Sun", time: "7:45am – 11pm" },
+    { day: "Rooftop · Wed – Sun", time: "4pm – late" },
   ],
 };
 
@@ -31,58 +32,65 @@ export const navLinks = [
 
 export const menuHighlights = [
   {
-    name: "Sample Dish One",
-    desc: "Short, sensory description of the dish goes here.",
-    price: "£00",
+    name: "Chilli Crispy Chicken",
+    desc: "Crispy fried chicken tossed in a chilli glaze, sesame and coriander, served with fries.",
+    price: "",
   },
   {
-    name: "Sample Dish Two",
-    desc: "Short, sensory description of the dish goes here.",
-    price: "£00",
+    name: "The Biggie Burger",
+    desc: "Loaded burger with cheddar, house sauce, fries and slaw on the side.",
+    price: "",
   },
   {
-    name: "Signature Cocktail",
-    desc: "Short, sensory description of the drink goes here.",
-    price: "£00",
+    name: "Moments Special Fried Rice",
+    desc: "The house fried rice — a Savories menu signature.",
+    price: "",
   },
   {
-    name: "Sample Dessert",
-    desc: "Short, sensory description of the dish goes here.",
-    price: "£00",
+    name: "Grilled Suya Skewers",
+    desc: "Charred skewers with jollof-style rice, salsa and fresh lime.",
+    price: "",
   },
 ];
 
 export const fullMenu = [
   {
-    category: "Small Plates",
+    category: "Restocafé & Breakfast",
     items: [
-      { name: "Placeholder item", desc: "Replace with real dish description.", price: "£0" },
-      { name: "Placeholder item", desc: "Replace with real dish description.", price: "£0" },
-      { name: "Placeholder item", desc: "Replace with real dish description.", price: "£0" },
+      { name: "Coffee", desc: "From the café side — ask about today's brew.", price: "" },
+      { name: "Breakfast plate", desc: "Café breakfast, served from 7:45am.", price: "" },
     ],
   },
   {
-    category: "Mains",
+    category: "Grill",
     items: [
-      { name: "Placeholder item", desc: "Replace with real dish description.", price: "£0" },
-      { name: "Placeholder item", desc: "Replace with real dish description.", price: "£0" },
-      { name: "Placeholder item", desc: "Replace with real dish description.", price: "£0" },
-      { name: "Placeholder item", desc: "Replace with real dish description.", price: "£0" },
+      { name: "Chicken Alfredo Pasta", desc: "Creamy garlic pasta topped with grilled chicken breast.", price: "" },
+      { name: "Grilled Chicken Wings & Fries", desc: "Sesame-glazed wings with a side of fries and ketchup.", price: "" },
+      { name: "Grilled Chicken Drumsticks", desc: "Served with coleslaw, plantain chips and pepper sauce.", price: "" },
+      { name: "T-Bone Steak", desc: "Grilled steak with mixed vegetables, fries and house sauces.", price: "" },
+      { name: "BBQ Ribs Platter", desc: "Ribs with lime, mixed salad, plantain chips and dips.", price: "" },
     ],
   },
   {
-    category: "Handcrafted Drinks",
+    category: "Afro Fusion",
     items: [
-      { name: "Placeholder item", desc: "Replace with real drink description.", price: "£0" },
-      { name: "Placeholder item", desc: "Replace with real drink description.", price: "£0" },
-      { name: "Placeholder item", desc: "Replace with real drink description.", price: "£0" },
+      { name: "Suya Skewer & Rice", desc: "Grilled skewers over jollof-style rice with salsa.", price: "" },
+      { name: "Grilled Chicken & Fried Plantain", desc: "Grilled chicken with fried plantain and fresh vegetables.", price: "" },
+      { name: "Moments Special Fried Rice", desc: "The house special, Savories menu.", price: "" },
     ],
   },
   {
-    category: "Desserts",
+    category: "Savories",
     items: [
-      { name: "Placeholder item", desc: "Replace with real dish description.", price: "£0" },
-      { name: "Placeholder item", desc: "Replace with real dish description.", price: "£0" },
+      { name: "Chilli Crispy Chicken", desc: "Crispy chicken in chilli glaze with fries.", price: "" },
+      { name: "The Biggie Burger", desc: "Loaded burger, cheddar, house sauce, fries and slaw.", price: "" },
+    ],
+  },
+  {
+    category: "Drinks",
+    items: [
+      { name: "Johnnie Walker Cocktails", desc: "Signature whisky cocktails, served over ice.", price: "" },
+      { name: "House Cocktails", desc: "Rotating list — ask your server what's pouring.", price: "" },
     ],
   },
 ];
@@ -94,10 +102,16 @@ export const testimonials = [
 ];
 
 export const galleryImages = [
-  { src: "/images/gallery-1.jpg", alt: "Replace with real photo — interior" },
-  { src: "/images/gallery-2.jpg", alt: "Replace with real photo — dish" },
-  { src: "/images/gallery-3.jpg", alt: "Replace with real photo — drink" },
-  { src: "/images/gallery-4.jpg", alt: "Replace with real photo — interior" },
-  { src: "/images/gallery-5.jpg", alt: "Replace with real photo — dish" },
-  { src: "/images/gallery-6.jpg", alt: "Replace with real photo — evening lounge" },
+  { src: "/images/gallery-pasta.jpg", alt: "Chicken Alfredo pasta" },
+  { src: "/images/gallery-wings.jpg", alt: "Grilled chicken wings and fries" },
+  { src: "/images/gallery-ribs.jpg", alt: "BBQ ribs platter" },
+  { src: "/images/gallery-suya-rice.jpg", alt: "Suya skewer and rice" },
+  { src: "/images/gallery-steak.jpg", alt: "T-bone steak platter" },
+  { src: "/images/gallery-drumsticks.jpg", alt: "Grilled chicken drumsticks" },
+  { src: "/images/gallery-grilled-plantain.jpg", alt: "Grilled chicken and fried plantain" },
+  { src: "/images/gallery-fried-rice.jpg", alt: "Moments special fried rice" },
+  { src: "/images/gallery-chilli-chicken.jpg", alt: "Chilli crispy chicken" },
+  { src: "/images/gallery-biggie-burger.jpg", alt: "The Biggie Burger" },
+  { src: "/images/gallery-cocktails-1.jpg", alt: "Johnnie Walker cocktails" },
+  { src: "/images/gallery-cocktails-2.jpg", alt: "House cocktails" },
 ];
