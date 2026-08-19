@@ -35,7 +35,7 @@ export default function Footer() {
           <ul className="space-y-1 text-sm text-sand">
             <li>{brand.address}</li>
             <li>{brand.phone}</li>
-            <li>{brand.email}</li>
+            {brand.email && <li>{brand.email}</li>}
             <li>
               <Link
                 href={brand.instagram}
